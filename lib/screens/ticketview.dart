@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:bookticket/utils/app.styles.dart';
 import 'package:bookticket/utils/app_layout.dart';
 import 'package:bookticket/widgets/thick_container.dart';
@@ -28,7 +26,7 @@ class TicketView extends StatelessWidget {
             */
             Container(
               decoration: BoxDecoration(
-                color: Color(0xFF526799),
+                color: const Color(0xFF526799),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(AppLayout.getHeight(21)),
                   topRight: Radius.circular(
@@ -58,8 +56,6 @@ class TicketView extends StatelessWidget {
                             child: LayoutBuilder(
                               builder: (BuildContext context,
                                   BoxConstraints constraints) {
-                                print(
-                                    'the width is ${constraints.constrainWidth()}');
                                 return Flex(
                                   direction: Axis.horizontal,
                                   mainAxisAlignment:
